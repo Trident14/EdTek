@@ -42,7 +42,7 @@ const Contact = () => {
   
       try {
           // Make the API call
-          const response = await axios.post('http://localhost:5050/userDetails', data);
+          const response = await axios.post('https://edtek-backend.onrender.com/userDetails', data);
           
           // Handle successful response
           console.log('Response from server:', response.data);
