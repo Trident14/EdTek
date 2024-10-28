@@ -1,0 +1,44 @@
+/* Basic styles for the section layout */
+.info-section {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .image-container,
+  .text-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .text-container p {
+    font-size: calc(1rem + 0.5vw); /* Dynamic font size based on viewport width */
+    line-height: 1.5;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .info-section {
+      flex-direction: column; /* Stack columns on mobile */
+    }
+    .text-container p {
+      font-size: 1rem; /* Smaller base font size for mobile */
+    }
+  }
+  

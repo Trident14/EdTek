@@ -1,0 +1,88 @@
+/* NavBar.css */
+
+.navbar {
+  width: 100%;
+  background-color: burlywood;
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Container to limit content width and center it */
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Controls max width on large screens */
+}
+
+/* Logo styling */
+img {
+  width: 10rem;
+}
+
+/* Align nav links on the right */
+.nav-part2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-part2 a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.menu-icon {
+  display: block;
+  opacity: 0;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+/* Responsive styling for mobile screens */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+ 
+
+  /* Hide nav links on mobile, make space for menu icon */
+  .nav-part2 {
+    display: none;
+  }
+
+  /* Optional: Show a menu icon (you could use a font icon or image) */
+  .menu-icon {
+    display: block;
+    opacity: 1;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+  }
+}
+/* NavBar.css */
+
+/* Toggle the nav links on mobile */
+.nav-part2.show {
+  display: flex; /* Display links when menu is open */
+}
+
+@media (max-width: 768px) {
+  .nav-part2 {
+    display: none;
+    flex-direction: column; /* Stack links vertically in mobile menu */
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: burlywood;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}

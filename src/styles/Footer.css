@@ -1,0 +1,9 @@
+/* Footer.css */
+.footer {
+    width: 100%;
+    background-color: burlywood; /* Match the navbar background */
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Add some padding */
+    position: relative; /* Position relative to allow placement at bottom */
+    bottom: 0; /* Position at the bottom of the page */
+}
