@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/NavBar.css';
+import '../styles/Navbar.css';
 import EdTek from '../assets/EdTek.svg';
 
 const NavBar = () => {
